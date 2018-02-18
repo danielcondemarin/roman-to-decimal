@@ -1,0 +1,32 @@
+{
+  "name": "roman-to-decimal-generator",
+  "version": "1.0.0",
+  "description": "Generates decimal numbers from roman numerals",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "babel-node lib/index.js",
+    "start": "node dist/index.js",
+    "build": "babel lib -d dist",
+    "test": "mocha --compilers js:babel-register",
+    "test:watch": "npm test -- --watch --watch-extensions json"
+  },
+  "keywords": [
+    "Roman",
+    "Decimal",
+    "Numeral",
+    "Converter"
+  ],
+  "author": "Daniel Conde",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "eslint": "^4.17.0",
+    "mocha": "^5.0.0"
+  },
+  "dependencies": {
+    "yargs": "^11.0.0"
+  }
+}
